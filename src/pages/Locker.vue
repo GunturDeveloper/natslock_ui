@@ -96,7 +96,7 @@ export default {
   methods: {
     async fetchLockerData() {
       try {
-        const response = await axios.get('https://api.lockify.space//api/systemdb/all')
+        const response = await axios.get('https://api.lockify.space/api/systemdb/all')
         const lockers = response.data.Locker
         console.log(lockers)
         const lockerNumber = parseInt(this.lockerNumber) - 1
