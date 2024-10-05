@@ -239,7 +239,7 @@ export default {
   methods: {
     async fetchpowerData() {
       try {
-        const response = await axios.get('http://192.168.183.4:2045/api/systemdb/power')
+        const response = await axios.get('https://api.lockify.space/api/systemdb/power')
         const powerData = response.data
         this.powerData = powerData
         console.log('Power data:', powerData)
